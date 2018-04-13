@@ -85,6 +85,9 @@ gulp.task('clean', function() {
   return del.sync('dist').then(function(cb) {
     return cache.clearAll(cb);
   });
+  return del.sync('docs').then(function(cb) {
+    return cache.clearAll(cb);
+  });
 })
 
 gulp.task('clean:dist', function() {
