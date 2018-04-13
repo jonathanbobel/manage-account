@@ -26,7 +26,10 @@ body {
   .section-right {
     margin-top: 0 !important; }
   .section-left {
-    padding-bottom: 1rem; } }
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem !important; }
+  .section-right {
+    margin-bottom: 1.5rem !important; } }
 
 @media (min-width: 576px) {
   .border-bottom {
@@ -71,7 +74,11 @@ body {
     color: white;
     background: #1589a5;
     font-size: 16px;
-    font-size: 1rem; }
+    font-size: 1rem;
+    height: 4em; }
+    @media (max-width: 767.98px) {
+      .form_container button {
+        height: 3em; } }
   .form_container a {
     font-weight: 700;
     color: #0F697F; }
@@ -85,6 +92,9 @@ body {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center; }
+    @media (max-width: 767.98px) {
+      .form_container .error {
+        margin-top: 1.5em; } }
     .form_container .error img {
       height: 80%;
       width: 10%;
