@@ -9,6 +9,9 @@ var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
+const sourcemaps = require('gulp-sourcemaps');
+const autoprefixer = require('gulp-autoprefixer');
+const concat = require('gulp-concat');
 
 // Basic Gulp task syntax
 gulp.task('hello', function() {
@@ -31,6 +34,11 @@ gulp.task('sass', function() {
   return gulp.src('app/scss/**/*.scss') // Gets all files ending with .scss in app/scss and children dirs
     .pipe(sass().on('error', sass.logError)) // Passes it through a gulp-sass, log errors to console
     .pipe(gulp.dest('app/css')) // Outputs it in the css folder
+    .pipe(sourcemaps.init())
+    .pipe(autoprefixer())
+    .pipe(concat('all.css'))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('dist'))
     .pipe(browserSync.reload({ // Reloading with Browser Sync
       stream: true
     }));
