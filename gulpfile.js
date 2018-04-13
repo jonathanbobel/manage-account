@@ -25,7 +25,7 @@ gulp.task('hello', function() {
 gulp.task('browserSync', function() {
   browserSync({
     server: {
-      baseDir: 'app'
+      baseDir: 'dist'
     }
   })
 })
@@ -36,7 +36,7 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('app/css')) // Outputs it in the css folder
     .pipe(sourcemaps.init())
     .pipe(autoprefixer())
-    .pipe(concat('all.css'))
+    .pipe(concat('css/styles.css'))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('dist'))
     .pipe(browserSync.reload({ // Reloading with Browser Sync
@@ -83,9 +83,6 @@ gulp.task('fonts', function() {
 // Cleaning 
 gulp.task('clean', function() {
   return del.sync('dist').then(function(cb) {
-    return cache.clearAll(cb);
-  });
-  return del.sync('docs').then(function(cb) {
     return cache.clearAll(cb);
   });
 })
