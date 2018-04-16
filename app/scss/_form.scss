@@ -20,6 +20,7 @@
 	}
 	label {
 		@include fontSize(16px);
+		font-weight: 700;
 	}
 
 	header {
@@ -42,8 +43,13 @@
 	button {
 		color: white;
 		background: #1589a5;
-		@include fontSize(16px);
-		height: 4em; 
+		@include fontSize(18px);
+		font-weight: 700;
+		height: 3.5em; 
+
+		&:hover {
+			background: $btn-blue-hover; 
+		}
 		@include media-breakpoint-down(sm){
 			height: 3em; 
 		}

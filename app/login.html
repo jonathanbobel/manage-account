@@ -35,21 +35,63 @@
 
     <section class="form_container mx-auto">
       <header>
-        <h1 class="mx-auto d-none d-md-block">Page Links</h1>
+        <h1 class="mx-auto d-none d-md-block">Hello!</h1>
       </header>
       <div class="container">
         <div class="row">
           <div class="col col-md-6 col-12 px-5 my-5 border-bottom border-right section-left">          
-            <button type="submit" onclick="window.location.href='/login.html'"class="btn btn-lg w-100 my-3">Login Page</button>
-            <button type="submit" onclick="window.location.href='/login-with-error.html'"class="btn btn-lg w-100 my-3">Login Page w/Error</button>
+            <img class="d-md-none mobile-logo w-100 mb-5" alt="Sherwin Williams Logo" src="images/sw_logo_blue.png"/>
+            <div><h2>Existing employee</h2></div>
+            <form>
+              <div class="form-group">
+                <label class="m-0" for="uid">User Name</label>
+                <input type="text" class="form-control form-control-lg" id="uid" />
+              </div>
+              <div class="form-group">
+                <label class="m-0" for="pswd">Password</label>
+                <input type="password" class="form-control form-control-lg" id="pswd" />
+              </div>
+              <div class="checkbox login">
+                <div class="row">
+                    <div class="col-6 pl-3 px-0">
+                        <label class="control control--checkbox">Remember me
+                          <input type="checkbox" checked="checked"/>
+                          <div class="control__indicator"></div>
+                        </label>
+                    </div>
+                    <div class="col-6 px-0">
+                     <label class="control control--checkbox">Show password
+                        <input type="checkbox"/>
+                        <div class="control__indicator"></div>
+                      </label>
+                    </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-lg w-100 my-3">Log In</button>
+              <div >
+                <a href="#" title="Forgot User Name/Password?">Forgot User Name/Password?</a>
+              </div>
+            </form>
           </div>
           <div class="col col-md-6 col-12 px-5 my-5 section-right">
+              <div class="w-80"><h2 class="mb-1">New employee</h2></div>
+              <button type="submit" class="btn btn-lg w-100 my-3">Create Account</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-lg-11 mx-auto">
+            <footer>
+              <p class="border-top pt-4 pb-2 text-center">
+                Having trouble? <a href="#">Visit our FAQ section</a>
+              </p>
+              <p class="copy pb-2 text-center">
+                Copyright © 2018 The Sherwin-Williams Company.
+              </p>
+            </footer>
           </div>
         </div>
       </div>
     </section>
-
-    <img id="branding" src="images/M2020.png">
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
