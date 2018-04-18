@@ -40,9 +40,16 @@
 		}
 	}
 
+	ul {
+		li {
+			color: $check-green;
+			font-weight: 700; 
+		}
+	}
+
 	button {
 		color: white;
-		background: #1589a5;
+		background: $btn-blue;
 		@include fontSize(18px);
 		font-weight: 700;
 		height: 3.5em; 
@@ -57,7 +64,34 @@
 
 	a {
 		font-weight: 700; 
-		color: $link-blue; 
+		color: $link-blue !important;
+		cursor: pointer;  
+	}
+
+	.extra-info {
+		position: relative;
+		display: inline-block;
+		border-radius: 50%; 
+		background-color: $btn-blue;
+		color: white; 
+	    width: 20px;
+	    height: 20px;
+	    text-align: center;
+	    padding-top: 10px;
+	    line-height: 0;
+    	top: -0.5rem;
+    	font-size: 75%; 
+	}
+
+	.control {
+		@include fontSize(16px !important);
+		padding-top: 0; 
+	}
+
+	.panel-collapse {
+		background: rgba(255,255,255,0.5);
+	    padding: 1em;
+	    @include border-radius(5); 
 	}
 
 	.error {
@@ -98,6 +132,38 @@
 		}
 	}
 
+	.control-group--inner {
+		label {
+			font-weight: 400; 
+			margin-left: 1.5rem; 
+		}
+	}
+
+	.dates {
+		.divider {
+			@include fontSize(20px);
+		}
+	}
+
+	#month {
+		background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat 95% 50%;
+		-moz-appearance: none; 
+		-webkit-appearance: none; 
+		appearance: none;
+		padding-left: 0.5em;
+		background-color: white; 
+	}
+
+	input[type=number]::-webkit-inner-spin-button, 
+	input[type=number]::-webkit-outer-spin-button { 
+	  -webkit-appearance: none; 
+	  margin: 0; 
+	}
+
+	input[type=number] {
+	  -moz-appearance: textfield;
+	}
+
 	footer {
 		p {
 			@include fontSize(16px);
@@ -107,6 +173,19 @@
 			}
 		}
 	}
-
-
 }
+
+// Misc Form Styles 
+
+.tooltip-inner {
+	background-color: $font-dark-grey !important; 
+    @include fontSize(13px);
+    padding: 0.5em; 
+}
+
+.tooltip .arrow:before {
+	border-bottom-color: $font-dark-grey !important; 
+	border-top-color: $font-dark-grey !important; 
+ }
+
+

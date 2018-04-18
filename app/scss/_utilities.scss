@@ -1,0 +1,9 @@
+.tooltip-inner {
+	background-color: $font-dark-grey !important; 
+    @include fontSize(12px);
+}
+
+.tooltip .arrow:before {
+	border-bottom-color: $font-dark-grey !important; 
+	border-top-color: $font-dark-grey !important; 
+ }
