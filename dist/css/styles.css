@@ -103,6 +103,8 @@ body {
     font-weight: 700;
     color: #0F697F !important;
     cursor: pointer; }
+  .form_container .validation-error {
+    color: #e54940; }
   .form_container .extra-info {
     position: relative;
     display: inline-block;
@@ -116,6 +118,9 @@ body {
     line-height: 0;
     top: -0.5rem;
     font-size: 75%; }
+    @media (max-width: 767.98px) {
+      .form_container .extra-info {
+        top: -.3rem; } }
   .form_container .control {
     font-size: 16px !important;
     font-size: 16px !important/16pxrem;
@@ -164,6 +169,9 @@ body {
   .form_container .control-group--inner label {
     font-weight: 400;
     margin-left: 1.5rem; }
+    @media (max-width: 767.98px) {
+      .form_container .control-group--inner label {
+        margin-left: 0; } }
   .form_container .dates .divider {
     font-size: 20px;
     font-size: 1.25rem; }

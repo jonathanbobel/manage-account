@@ -68,6 +68,10 @@
 		cursor: pointer;  
 	}
 
+	.validation-error {
+		color: $error-red;
+	}
+
 	.extra-info {
 		position: relative;
 		display: inline-block;
@@ -81,6 +85,10 @@
 	    line-height: 0;
     	top: -0.5rem;
     	font-size: 75%; 
+    	
+    	@include media-breakpoint-down(sm){
+			top: -.3rem;
+		}
 	}
 
 	.control {
@@ -136,6 +144,11 @@
 		label {
 			font-weight: 400; 
 			margin-left: 1.5rem; 
+
+			@include media-breakpoint-down(sm) {
+    			margin-left: 0; 
+    		}
+
 		}
 	}
 

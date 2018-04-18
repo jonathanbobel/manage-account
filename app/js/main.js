@@ -16,7 +16,11 @@ $(function() {
 	 // Set current year as max for birthday 
 	var today = new Date();
 	var yyyy = today.getFullYear();
-	document.getElementById("dateOfBirthYear").setAttribute("max", yyyy);
+	var birthYear = document.getElementById("dateOfBirthYear");
+
+	if ($(birthYear).length > 0){
+		(birthYear).setAttribute("max", yyyy);
+	}
 
 	// Restrict input values 
 	 $( "input" ).change(function() {
