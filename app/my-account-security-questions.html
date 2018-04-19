@@ -35,57 +35,58 @@
 
     <section class="form_container mx-auto mb-5">
       <header>
-        <h1 class="mx-auto d-none d-md-block">Reset Password</h1>
+        <h1 class="mx-auto d-none d-md-block">Security Questions</h1>
       </header>
       <div class="container">
         <div class="row">
-          <div class="col col-lg-8 mx-auto px-5 my-2">          
+          <div class="col col-lg-10 mx-auto px-5 my-2">          
             <img class="d-md-none mobile-logo w-100 my-5" alt="Sherwin Williams Logo" src="images/sw_logo_blue.png"/>
-            <div><h2 class="text-center">Step 1 of 3</h2></div>
             <form>
-              <div class="form-group">
-                <label class="m-0" for="firstName">First Name</label>
-                <input type="text" class="form-control form-control-lg" id="firstName" />
+              <div class="form-group mt-5">
+                <label class="m-0" for="challengeOne">Challenge Question #1</label>
+                <select id="challengeOne" class="form-control select-arrow form-control-lg px-2 pr-5" name="challengeOne" />
+                  <option>What was the name of your childhood pet?</option>
+                  <option>What was the name of your maternal grandmother?</option>
+                  <option>What was your favorite activity while attending school?</option>
+                </select>
               </div>
               <div class="form-group">
-                <label class="m-0" for="lastName">Last Name</label>
+                <label class="m-0" for="lastName">Answer to Question #1</label>
                 <input type="text" class="form-control form-control-lg" id="lastName" />
               </div>
-              <div class="form-group dates">
-                <div class="row px-3">
-                  <label class="m-0" for="dateOfBirth">Date of Birth (m/dd/yyyy)</label>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <select id="month" class="form-control form-control-lg select-arrow px-2 pr-2" name="month" />
-                    <option selected="true" disabled="disabled">Month</option>     
-                    <option>January</option>       
-                    <option>February</option>       
-                    <option>March</option>       
-                    <option>April</option>       
-                    <option>May</option>       
-                    <option>June</option>       
-                    <option>July</option>       
-                    <option>August</option>       
-                    <option>September</option>       
-                    <option>October</option>       
-                    <option>November</option>       
-                    <option>December</option>       
-                  </select>
-                  </div>
-                  <div class="divider mt-2">/</div>
-                  <div class="col">
-                    <input placeholder="DD" type="number" min="1" max="31" class="form-control form-control-lg px-2" id="dateOfBirthDay" />
-                  </div>
-                  <div class="divider mt-2">/</div>
-                  <div class="col">
-                    <input placeholder="YYYY" type="number" min="1900" max="" class="form-control form-control-lg px-2" id="dateOfBirthYear" />
-                  </div>
-                </div>
+              <div class="form-group">
+                <label class="m-0" for="challengeTwo">Challenge Question #2</label>
+                <select id="challengeTwo" class="form-control select-arrow form-control-lg px-2 pr-5" name="challengeTwo" />
+                  <option>What was the name of your maternal grandmother?</option>
+                  <option>What was the name of your childhood pet?</option>
+                  <option>What was your favorite activity while attending school?</option>
+                </select>
               </div>
-               <div class="text-center">
-                <button type="submit" class="btn btn-lg w-100 col-6 btn-m-med">Continue</button>
-              </div>            
+              <div class="form-group">
+                <label class="m-0" for="lastName">Answer to Question #2</label>
+                <input type="text" class="form-control form-control-lg" id="lastName" />
+              </div>
+                 <div class="form-group">
+                <label class="m-0" for="challengeThree">Challenge Question #3</label>
+                <select id="challengeThree" class="form-control select-arrow form-control-lg px-2 pr-5" name="challengeThree" />
+                  <option>What was your favorite activity while attending school?</option>
+                  <option>What was the name of your maternal grandmother?</option>
+                  <option>What was the name of your childhood pet?</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="m-0" for="lastName">Answer to Question #3</label>
+                <input type="text" class="form-control form-control-lg" id="lastName" />
+              </div>
+            
+              <div class="row btn-m-med">
+                <div class="col">
+                  <button type="submit" class="btn btn-lg w-100">Submit</button>
+                </div>
+                <div class="col">
+                  <button type="submit" class="btn secondary btn-lg w-100">Cancel</button>
+                </div>
+              </div>      
             </form>
           </div>
         </div>
