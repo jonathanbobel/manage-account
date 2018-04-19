@@ -21,7 +21,7 @@
 	h3 {
 		@include fontSize(18px);
 		font-weight: 700;
-		margin-bottom: 1em; 
+		//margin-bottom: 1em; 
 	}
 	label {
 		@include fontSize(16px);
@@ -55,9 +55,16 @@
 	button {
 		color: white;
 		background: $btn-blue;
-		@include fontSize(18px);
 		font-weight: 700;
-		height: 3.5em; 
+
+		&.btn-lg {
+			height: 3.5em; 
+			@include fontSize(18px);
+		}
+
+		&.btn-sm {
+			height: 3.5em; 
+		}
 
 		&:hover {
 			background: $btn-blue-hover; 
@@ -222,5 +229,15 @@
 	@include media-breakpoint-down(md) {
 		margin-bottom: 1em !important; 
 	}
+}
+
+.mb-md-0 {
+	@include media-breakpoint-down(md) {
+		margin-bottom: 0 !important; 
+	}
+}
+
+.mb-4-5 {
+	margin-bottom: 2rem !important; 
 }
 

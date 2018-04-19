@@ -70,8 +70,7 @@ body {
   .form_container h3 {
     font-size: 18px;
     font-size: 1.125rem;
-    font-weight: 700;
-    margin-bottom: 1em; }
+    font-weight: 700; }
   .form_container label {
     font-size: 16px;
     font-size: 1rem;
@@ -94,10 +93,13 @@ body {
   .form_container button {
     color: white;
     background: #3176a3;
-    font-size: 18px;
-    font-size: 1.125rem;
-    font-weight: 700;
-    height: 3.5em; }
+    font-weight: 700; }
+    .form_container button.btn-lg {
+      height: 3.5em;
+      font-size: 18px;
+      font-size: 1.125rem; }
+    .form_container button.btn-sm {
+      height: 3.5em; }
     .form_container button:hover {
       background: #388ebc; }
     .form_container button.secondary {
@@ -217,6 +219,13 @@ body {
 @media (max-width: 991.98px) {
   .mb-md-1 {
     margin-bottom: 1em !important; } }
+
+@media (max-width: 991.98px) {
+  .mb-md-0 {
+    margin-bottom: 0 !important; } }
+
+.mb-4-5 {
+  margin-bottom: 2rem !important; }
 
 .control {
   display: block;
