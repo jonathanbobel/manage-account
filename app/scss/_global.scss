@@ -55,7 +55,9 @@ body {
 }
 
 @include media-breakpoint-up(sm) {
-  .border-bottom {
-  	border-bottom: 0 !important;
+  .section-left, .section-right {
+    .border-bottom {
+    	border-bottom: 0 !important;
+    }
   }
 }
