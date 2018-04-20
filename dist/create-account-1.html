@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Reset Password - Step 1</title>
+  <title>Create Account</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> 
   <!--[if IE]>
     <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
@@ -34,7 +34,7 @@
 
     <section class="form_container mx-auto mb-5">
       <header>
-        <h1 class="mx-auto d-none d-md-block">Reset Password</h1>
+        <h1 class="mx-auto d-none d-md-block">Create Account</h1>
       </header>
       <div class="container">
         <div class="row">
@@ -43,15 +43,12 @@
             <div><h2 class="text-center">Step 1 of 3</h2></div>
             <form>
               <div class="form-group">
-                <div class="row">
-                  <div class="col-7">
-                    <label class="m-0" for="userID">User ID</label>
-                    <input type="text" class="form-control form-control-lg" id="userID" />
-                  </div>
-                  <div class="col-5 pt-4">
-                    <a href="#">Forgot User ID?</a>
-                  </div>
-                </div>
+                <label class="m-0" for="firstName">First Name</label>
+                <input type="text" class="form-control form-control-lg" id="firstName" />
+              </div>
+              <div class="form-group">
+                <label class="m-0" for="lastName">Last Name</label>
+                <input type="text" class="form-control form-control-lg" id="lastName" />
               </div>
               <div class="form-group dates">
                 <div class="row px-3">
@@ -84,6 +81,11 @@
                     <input placeholder="YYYY" type="number" min="1900" max="" class="form-control form-control-lg px-2" id="dateOfBirthYear" />
                   </div>
                 </div>
+              </div>
+              <div class="form-group">
+                <label class="m-0" for="uid">Last 4 of your SSN/National ID</label>
+                <a data-toggle="tooltip" data-placement="top" data-offset="top 10" title="Information regarding the Social Security Number or National ID"><span class="extra-info">?</span></a>
+                <input type="text" class="form-control form-control-lg col-4" />
               </div>
                <div class="text-center">
                 <button type="submit" class="btn btn-lg w-100 col-6 btn-m-med">Continue</button>
