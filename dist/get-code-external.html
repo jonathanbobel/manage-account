@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Login w/Error</title>
+  <title>Get Code - External Facing</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> 
   <!--[if IE]>
     <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
@@ -32,54 +32,43 @@
       </div>
     </nav>
 
-    <section class="form_container mx-auto">
-        <header class="flex-row align-items-center justify-content-center d-none d-md-flex">
-          <h1>Hello!</h1>
+    <section class="form_container mx-auto mb-5">
+      <header class="d-flex flex-row align-items-center justify-content-center">
+        <a href="index.html" class="home-arrow d-md-none pl-3"><img src="images/svg/left-arrow.svg"/></a>
+        <h1 class="m-0">For Your Protection</h1>
       </header>
-       <div class="row error py-3">
-          <img src="images/svg/exclamation.svg"/>
-          <p>We’re sorry you are having difficulty logging in, but the information you entered does not match our records.</p>
-        </div>
       <div class="container">
         <div class="row">
-          <div class="col col-md-6 col-12 px-5 my-5 border-right section-left">          
-            <img class="d-md-none mobile-logo w-100 mb-5" alt="Sherwin Williams Logo" src="images/sw_logo_blue.png"/>
-            <div><h2>Existing employee</h2></div>
+          <div class="col col-lg-8 mx-auto px-5 my-2">          
+            <div><h2 class="text-center my-5">Please help us verify your identity</h2></div>
             <form>
-              <div class="form-group">
-                <label class="m-0" for="uid">User Name</label>
-                <input type="text" class="form-control form-control-lg" id="uid" />
+              <p class="mt-5">We will send you a temporary security code. Choose how you would like to receive it.</p>
+              <div class="panel-body control-group control-group--inner">
+                   <label class="control control--radio">By phone via text at xxx-xxx-1234
+                    <input type="radio" name="inner-radio"/>
+                    <div class="control__indicator"></div>
+                  </label>
+                  <label class="control control--radio">By email at h....n@sherwin.com
+                    <input type="radio" name="inner-radio"/>
+                    <div class="control__indicator"></div>
+                  </label>
+                   <label class="control control--radio">By phone via text at xxx-xxx-1234
+                    <input type="radio" name="inner-radio"/>
+                    <div class="control__indicator"></div>
+                  </label>
+                   <label class="control control--radio">By email at h....n@sherwin.com
+                    <input type="radio" name="inner-radio"/>
+                    <div class="control__indicator"></div>
+                  </label>
+                   <label class="control control--radio">Through Mobile Authenticator App
+                    <input type="radio" name="inner-radio"/>
+                    <div class="control__indicator"></div>
+                  </label>
               </div>
-              <div class="form-group">
-                <label class="m-0" for="pswd">Password</label>
-                <input type="password" class="form-control form-control-lg" id="pswd" />
-              </div>
-              <div class="checkbox login">
-                <div class="row">
-                    <div class="col-6 pl-3 px-0">
-                        <label class="control control--checkbox">Remember me
-                          <input type="checkbox" checked="checked"/>
-                          <div class="control__indicator"></div>
-                        </label>
-                    </div>
-                    <div class="col-6 px-0">
-                     <label class="control control--checkbox">Show password
-                        <input type="checkbox"/>
-                        <div class="control__indicator"></div>
-                      </label>
-                    </div>
-                </div>
-              </div>
-              <button type="submit" class="btn btn-lg w-100 my-3">Log In</button>
-              <div >
-                <a href="#" title="Forgot User Name/Password?">Forgot User Name/Password?</a>
+              <div class="text-center">
+                <button type="submit" class="btn btn-lg w-100 col-6 btn-m-med">Continue</button>
               </div>
             </form>
-          </div>
-          <hr class=""/>
-          <div class="col col-md-6 col-12 px-5 my-5 section-right">
-              <div class="w-80"><h2 class="mb-1">New employee</h2></div>
-              <button type="submit" class="btn btn-lg w-100 my-3">Create Account</button>
           </div>
         </div>
         <div class="row">

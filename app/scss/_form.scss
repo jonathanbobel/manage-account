@@ -4,6 +4,7 @@
 	min-height: 500px;
 	@include border-bottom-radius(10px); 
 	@include fontSize(16px);
+	position: relative; 
 
 	h1, h2, h3, p, label, button {
 		font-family: $open-sans;
@@ -31,18 +32,34 @@
 	header {
 		position: relative; 
 		z-index: 1; 
+		background: $sw-blue; 
+		height: 100px;
+
+		@include media-breakpoint-down(sm){
+			height: 60px; 
+		}
+
+		.home-arrow {
+			position: fixed; 
+			left: 0;
+
+			img {
+				height: 25px;
+			}
+
+		}
 
 		h1 {
-			background: $sw-blue; 
 			color: white; 
 			text-align: center; 
-			padding-top: 30px; 
-			font-size: rem(10);
-			height: 100px;
+
+			@include media-breakpoint-down(sm){
+				@include fontSize(24px);
+				font-weight: normal; 
+			}
+
 		}
-		h2 {
-			font-size: rem(10); 
-		}
+		
 	}
 
 	ul {
@@ -134,6 +151,7 @@
 		left: 15px; 
 		justify-content: center; 
 		align-items: center;
+		z-index: 1; 
 
 		@include media-breakpoint-down(sm){
 			margin-top: 1.5em; 

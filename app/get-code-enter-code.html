@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Login w/Error</title>
+  <title>Get Code - Enter Code</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> 
   <!--[if IE]>
     <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
@@ -32,54 +32,38 @@
       </div>
     </nav>
 
-    <section class="form_container mx-auto">
-        <header class="flex-row align-items-center justify-content-center d-none d-md-flex">
-          <h1>Hello!</h1>
+    <section class="form_container mx-auto mb-5">
+      <header class="d-flex flex-row align-items-center justify-content-center">
+        <a href="index.html" class="home-arrow d-md-none pl-3"><img src="images/svg/left-arrow.svg"/></a>
+        <h1 class="m-0">For Your Protection</h1>
       </header>
-       <div class="row error py-3">
-          <img src="images/svg/exclamation.svg"/>
-          <p>We’re sorry you are having difficulty logging in, but the information you entered does not match our records.</p>
-        </div>
       <div class="container">
         <div class="row">
-          <div class="col col-md-6 col-12 px-5 my-5 border-right section-left">          
-            <img class="d-md-none mobile-logo w-100 mb-5" alt="Sherwin Williams Logo" src="images/sw_logo_blue.png"/>
-            <div><h2>Existing employee</h2></div>
+          <div class="col col-lg-8 mx-auto px-5 my-2">          
             <form>
+              <div><h2 class="my-5">We sent you a message</h2></div>
+              <p>Your verification code is on it's way. Upon receipt, enter it below.</p>
               <div class="form-group">
-                <label class="m-0" for="uid">User Name</label>
-                <input type="text" class="form-control form-control-lg" id="uid" />
+                <label class="m-0" for="securityCode">Verification code</label>
+                <input type="password" class="form-control form-control-lg" id="securityCode" />
+                <p class="mt-4 mb-1">Never received the code?</p>
+                <p class="mb-5"><a href="#">Resend Pin</a></p>
               </div>
-              <div class="form-group">
-                <label class="m-0" for="pswd">Password</label>
-                <input type="password" class="form-control form-control-lg" id="pswd" />
+              <div class="panel-body control-group control-group--inner">
+                <p>Should we remember this device?</p>
+                 <label class="control control--radio">Yes this is a personal or work device I frequently use
+                  <input type="radio" name="inner-radio"/>
+                  <div class="control__indicator"></div>
+                </label>
+                <label class="control control--radio">No, this is public device
+                  <input type="radio" name="inner-radio"/>
+                  <div class="control__indicator"></div>
+                </label>
               </div>
-              <div class="checkbox login">
-                <div class="row">
-                    <div class="col-6 pl-3 px-0">
-                        <label class="control control--checkbox">Remember me
-                          <input type="checkbox" checked="checked"/>
-                          <div class="control__indicator"></div>
-                        </label>
-                    </div>
-                    <div class="col-6 px-0">
-                     <label class="control control--checkbox">Show password
-                        <input type="checkbox"/>
-                        <div class="control__indicator"></div>
-                      </label>
-                    </div>
-                </div>
-              </div>
-              <button type="submit" class="btn btn-lg w-100 my-3">Log In</button>
-              <div >
-                <a href="#" title="Forgot User Name/Password?">Forgot User Name/Password?</a>
+              <div class="text-center">
+                <button type="submit" class="btn btn-lg w-100 col-6 btn-m-med">Submit</button>
               </div>
             </form>
-          </div>
-          <hr class=""/>
-          <div class="col col-md-6 col-12 px-5 my-5 section-right">
-              <div class="w-80"><h2 class="mb-1">New employee</h2></div>
-              <button type="submit" class="btn btn-lg w-100 my-3">Create Account</button>
           </div>
         </div>
         <div class="row">
@@ -101,7 +85,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
   
-    <script src="js/main.min.js"></script>
+    <!--build:js js/main.min.js -->
+    <script src="js/lib/a-library.js"></script>
+    <script src="js/lib/another-library.js"></script>
+    <script src="js/main.js"></script>
+    <!-- endbuild -->
 </body>
 
 </html>
