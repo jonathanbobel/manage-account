@@ -50,4 +50,36 @@ $(function() {
 	   }       
 	 }); 
 
+	 // Phone validation 
+	//  var telInput = $("#intlPhone"),
+	//   errorMsg = $("#error-msg"),
+	//   validMsg = $("#valid-msg");
+
+	// // initialise plugin
+	// telInput.intlTelInput({
+	//   utilsScript: "../../build/js/utils.js"
+	// });
+
+	// var reset = function() {
+	//   telInput.removeClass("error");
+	//   errorMsg.addClass("d-none");
+	//   validMsg.addClass("d-none");
+	// };
+
+	// // on blur: validate
+	// telInput.blur(function() {
+	//   reset();
+	//   if ($.trim(telInput.val())) {
+	//     if (telInput.intlTelInput("isValidNumber")) {
+	//       validMsg.removeClass("d-none");
+	//     } else {
+	//       telInput.addClass("error");
+	//       errorMsg.removeClass("d-none");
+	//     }
+	//   }
+	// });
+
+	// // on keyup / change flag: reset
+	// telInput.on("keyup change", reset);
+
 });

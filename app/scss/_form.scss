@@ -44,7 +44,7 @@
 			left: 0;
 
 			img {
-				height: 25px;
+				height: 22px;
 			}
 
 		}
@@ -54,7 +54,7 @@
 			text-align: center; 
 
 			@include media-breakpoint-down(sm){
-				@include fontSize(24px);
+				@include fontSize(22px);
 				font-weight: normal; 
 			}
 
@@ -63,9 +63,29 @@
 	}
 
 	ul {
+		padding-left: 1em;
 		li {
-			color: $check-green;
-			font-weight: 700; 
+			padding: 0.5em 0;
+			list-style: none; 
+			&:before {
+				color: $check-green;  
+				content: "\2022"; 
+				font-size: 1em; 
+				padding-right: 0.5em; 
+				position: relative;
+				top: -2px;
+			}
+		}
+		&.rules {
+			li {
+				color: $check-green;
+				font-weight: 700; 
+				list-style: disc; 
+				&:before {
+					content: "";
+					padding: 0;
+				}
+			}
 		}
 	}
 
@@ -143,7 +163,7 @@
 	    @include border-radius(5); 
 	}
 
-	.error {
+	.main-error {
 		background: $error-red;
 		width: 100%;
 		position: absolute; 
@@ -180,6 +200,10 @@
     			@include fontSize(13px);
     		}
 		}
+	}
+
+	.error {
+		background-color: pink;
 	}
 
 	.control-group--inner {
