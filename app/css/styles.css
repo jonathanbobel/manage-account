@@ -101,7 +101,9 @@ body {
     padding-left: 1em; }
     .form_container ul li {
       padding: 0.5em 0;
-      list-style: none; }
+      list-style: none;
+      text-indent: -15px;
+      margin-left: 15px; }
       .form_container ul li:before {
         color: #009789;
         content: "\2022";
@@ -112,7 +114,10 @@ body {
     .form_container ul.rules li {
       color: #009789;
       font-weight: 700;
-      list-style: disc; }
+      list-style: disc;
+      text-indent: 0;
+      margin-left: 0;
+      padding: 0; }
       .form_container ul.rules li:before {
         content: "";
         padding: 0; }
@@ -143,6 +148,26 @@ body {
     font-weight: 700;
     color: #0F697F !important;
     cursor: pointer; }
+  .form_container p.background {
+    position: relative;
+    z-index: 1; }
+    .form_container p.background:before {
+      border-top: 2px solid #d4d2d2;
+      content: "";
+      margin: 0 auto;
+      /* this centers the line to the full width specified */
+      position: absolute;
+      /* positioning must be absolute here, and relative positioning must be applied to the parent */
+      top: 50%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 95%;
+      z-index: -1; }
+    .form_container p.background span {
+      /* to hide the lines from behind the text, you have to set the background color the same as the container */
+      background: #ebedee;
+      padding: 0 15px; }
   .form_container .validation-error {
     color: #e54940; }
   .form_container .extra-info {

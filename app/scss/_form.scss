@@ -66,7 +66,10 @@
 		padding-left: 1em;
 		li {
 			padding: 0.5em 0;
-			list-style: none; 
+			list-style: none;
+			text-indent: -15px; 
+			margin-left: 15px; 
+
 			&:before {
 				color: $check-green;  
 				content: "\2022"; 
@@ -81,6 +84,9 @@
 				color: $check-green;
 				font-weight: 700; 
 				list-style: disc; 
+				text-indent: 0; 
+				margin-left: 0; 
+				padding: 0; 
 				&:before {
 					content: "";
 					padding: 0;
@@ -127,6 +133,27 @@
 		font-weight: 700; 
 		color: $link-blue !important;
 		cursor: pointer;  
+	}
+
+	p.background {
+	    position: relative;
+	    z-index: 1;
+	    
+	    &:before {
+	        border-top: 2px solid $border-grey;
+	        content:"";
+	        margin: 0 auto; /* this centers the line to the full width specified */
+	        position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+	        top: 50%; left: 0; right: 0; bottom: 0;
+	        width: 95%;
+	        z-index: -1;
+	    }
+
+	    span { 
+	        /* to hide the lines from behind the text, you have to set the background color the same as the container */ 
+	        background: $bg-grey; 
+	        padding: 0 15px; 
+	    }
 	}
 
 	.validation-error {
