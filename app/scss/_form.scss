@@ -190,7 +190,7 @@
 	    @include border-radius(5); 
 	}
 
-	.main-error {
+	.main-error, .main-success {
 		background: $error-red;
 		width: 100%;
 		position: absolute; 
@@ -226,6 +226,14 @@
 			@include media-breakpoint-down(sm) {
     			@include fontSize(13px);
     		}
+		}
+	}
+
+	.main-success {
+		background: $success-green;
+
+		img {
+			fill: white; 
 		}
 	}
 
