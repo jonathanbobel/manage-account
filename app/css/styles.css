@@ -233,8 +233,27 @@ body {
     background: #00bfad; }
     .form_container .main-success img {
       fill: white; }
-  .form_container .error {
-    background-color: pink; }
+  .form_container .form-group.error label {
+    color: #e54940;
+    font-weight: bold; }
+  .form_container .form-group.error input {
+    background-color: #f6d2d2;
+    border: 2px solid #e54940;
+    color: #e54940; }
+  .form_container .form-group.error p {
+    display: block !important;
+    color: #e54940; }
+  .form_container .form-group.valid label {
+    color: #009789;
+    font-weight: bold; }
+  .form_container .form-group.valid input {
+    border: 2px solid #009789;
+    color: #009789;
+    background: #d9f9f6 url(../images/svg/checked-input.svg) no-repeat 98% 50%;
+    background-size: 25px; }
+  .form_container .form-group.valid p {
+    display: block !important;
+    color: #009789; }
   .form_container .control-group--inner label {
     font-weight: 400;
     margin-left: 1.5rem; }

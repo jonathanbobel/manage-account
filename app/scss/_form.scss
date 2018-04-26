@@ -237,8 +237,41 @@
 		}
 	}
 
-	.error {
-		background-color: pink;
+	.form-group {
+		&.error {
+			label {
+				color: $error-red; 
+				font-weight: bold; 
+			}
+			input {
+				background-color: $error-bg;
+				border: 2px solid $error-red;
+				color: $error-red;
+				// &:focus {
+				// 	box-shadow: 0 0 0 0.2rem rgba(229,73,64,.25)
+				// } 
+			}
+			p {
+				display: block !important; 
+				color: $error-red;
+			}
+		}
+		&.valid {
+			label {
+				color: $check-green;
+				font-weight: bold; 
+			}
+			input {
+				border: 2px solid $check-green;
+				color: $check-green; 
+				background: $success-bg url(../images/svg/checked-input.svg) no-repeat 98% 50%;
+				background-size: 25px; 				
+			}
+			p {
+				display: block !important; 
+				color: $check-green;
+			}
+		}
 	}
 
 	.control-group--inner {
