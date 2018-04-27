@@ -311,6 +311,9 @@ body {
 .pt-4-5 {
   padding-top: 2rem !important; }
 
+.mb-10 {
+  margin-bottom: 10rem !important; }
+
 .control {
   display: block;
   position: relative;

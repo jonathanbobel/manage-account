@@ -50,6 +50,21 @@ $(function() {
 	   }       
 	 }); 
 
+	 // Slide up success messager if it exists
+
+	 if ( $( ".main-success" ).length ) {
+
+		function slideFade(elem) {
+			var fade = { opacity: 0, transition: 'opacity 0.2s' };
+			elem.css(fade).slideUp();
+		}
+
+		setTimeout(function() {
+			slideFade($(".main-success"));
+		}, 5000);
+
+	}
+
 	 // Phone validation 
 	//  var telInput = $("#intlPhone"),
 	//   errorMsg = $("#error-msg"),

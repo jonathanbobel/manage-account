@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Reset Password - Step 2</title>
+  <title>Login</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> 
   <!--[if IE]>
     <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
@@ -32,32 +32,20 @@
       </div>
     </nav>
 
-    <section class="form_container mx-auto mb-5">
-       <header class="d-flex flex-row align-items-center justify-content-center">
-        <a href="index.html" class="home-arrow d-md-none pl-3"><img src="images/svg/left-arrow.svg"/></a>
-        <h1 class="m-0">Mobile Authenticator App</h1>
+    <section class="form_container mx-auto" id="login">
+      <header class="flex-row align-items-center justify-content-center d-none d-md-flex">
+        <h1>Logged Out</h1>
       </header>
+       <div class="row main-success py-3">
+          <img src="images/svg/checked.svg"/>
+          <p>You have successfully logged out of the system</p>
+        </div>
       <div class="container">
         <div class="row">
-          <div class="col col-lg-8 mx-auto px-5 my-5">          
-            <div><h2 class="text-center mb-5">Install the Authenticator</h2></div>
-            <p>Instead of waiting for text messages or an email, get verification codes through a Mobile Authenticator App. Please follow the following instructions to configure it your mobile phone.</p>
-            <form>
-              <p class="mt-5 font-weight-bold">What kind of Phone do you have?</p>
-              <ul>
-                <li>Get the Authenticator app from the <a href="http://appstore.com/apps">App Store</a></li>
-                <li>Open the app. Accept the agreements to continue</li>
-                <li>Click Add Account and allow the app to access your camera</li>
-              </ul>  
-              <div class="row btn-m-med">
-                <div class="col">
-                  <button type="submit" class="btn btn-lg w-100 mb-2">Continue</button>
-                </div>
-                <div class="col">
-                  <button type="submit" class="btn secondary btn-lg w-100">Cancel</button>
-                </div>
-              </div>
-            </form>
+           <div class="col col-lg-8 mx-auto px-5 my-5">   
+            <img class="d-md-none mobile-logo w-100 mb-5" alt="Sherwin Williams Logo" src="images/sw_logo_blue.png"/>
+                  
+            <div><h2 class="text-center mt-5 mb-10">You are now logged out of your web session</h2></div>
           </div>
         </div>
         <div class="row">
