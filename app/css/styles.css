@@ -85,7 +85,7 @@ body {
       .form_container header {
         height: 60px; } }
     .form_container header .home-arrow {
-      position: fixed;
+      position: absolute;
       left: 0; }
       .form_container header .home-arrow img {
         height: 22px; }
@@ -236,10 +236,12 @@ body {
   .form_container .form-group.error label {
     color: #e54940;
     font-weight: bold; }
-  .form_container .form-group.error input {
+  .form_container .form-group.error input, .form_container .form-group.error select {
     background-color: #f6d2d2;
     border: 2px solid #e54940;
     color: #e54940; }
+  .form_container .form-group.error .select-arrow {
+    background-color: #f6d2d2 !important; }
   .form_container .form-group.error p {
     display: block !important;
     color: #e54940; }

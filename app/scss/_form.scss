@@ -40,7 +40,7 @@
 		}
 
 		.home-arrow {
-			position: fixed; 
+			position: absolute; 
 			left: 0;
 
 			img {
@@ -243,13 +243,16 @@
 				color: $error-red; 
 				font-weight: bold; 
 			}
-			input {
+			input, select {
 				background-color: $error-bg;
 				border: 2px solid $error-red;
 				color: $error-red;
 				// &:focus {
 				// 	box-shadow: 0 0 0 0.2rem rgba(229,73,64,.25)
 				// } 
+			}
+			.select-arrow {
+				background-color: $error-bg !important; 
 			}
 			p {
 				display: block !important; 
