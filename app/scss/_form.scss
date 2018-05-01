@@ -330,7 +330,7 @@
 .tooltip-inner {
 	background-color: $font-dark-grey !important; 
     @include fontSize(13px);
-    padding: 0.5em; 
+    padding: 0.5em;
 }
 
 .tooltip .arrow:before {
