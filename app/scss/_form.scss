@@ -97,7 +97,7 @@
 		}
 	}
 
-	button {
+	button, a.btn {
 		color: white;
 		background: $btn-blue;
 		font-weight: 700;
@@ -134,7 +134,13 @@
 	a {
 		font-weight: 700; 
 		color: $link-blue !important;
-		cursor: pointer;  
+		cursor: pointer; 
+
+		&.btn {
+			color: white !important;
+			line-height: 3rem;
+			height: auto !important; 
+		} 
 	}
 
 	p.background {
