@@ -30,6 +30,10 @@ body {
   margin-top: 3rem !important;
   margin-bottom: 4rem !important; }
 
+.disclaimer {
+  font-size: 12px;
+  font-size: 0.75rem; }
+
 @media (max-width: 767.98px) {
   .border-right {
     border-right: 0 !important; }
@@ -97,30 +101,30 @@ body {
           font-size: 22px;
           font-size: 1.375rem;
           font-weight: normal; } }
-  .form_container ul {
+  .form_container ul:not(.country-list) {
     padding-left: 1em; }
-    .form_container ul li {
+    .form_container ul:not(.country-list) li {
       padding: 0.5em 0;
       list-style: none;
       text-indent: -15px;
       margin-left: 15px; }
-      .form_container ul li:before {
+      .form_container ul:not(.country-list) li:before {
         color: #009789;
         content: "\2022";
         font-size: 1em;
         padding-right: 0.5em;
         position: relative;
         top: -2px; }
-    .form_container ul.rules li {
-      color: #009789;
-      font-weight: 700;
-      list-style: disc;
-      text-indent: 0;
-      margin-left: 0;
+  .form_container ul.rules li {
+    color: #009789;
+    font-weight: 700;
+    list-style: disc;
+    text-indent: 0;
+    margin-left: 0;
+    padding: 0; }
+    .form_container ul.rules li:before {
+      content: "";
       padding: 0; }
-      .form_container ul.rules li:before {
-        content: "";
-        padding: 0; }
   .form_container button {
     color: white;
     background: #3176a3;
@@ -233,6 +237,16 @@ body {
     background: #00bfad; }
     .form_container .main-success img {
       fill: white; }
+  .form_container #accordion label {
+    font-weight: 400; }
+  .form_container #accordion button.collapsed {
+    background: transparent;
+    border: 3px solid #3176a3;
+    color: #3176a3; }
+    .form_container #accordion button.collapsed:hover {
+      background: #388ebc;
+      border: 3px solid #388ebc;
+      color: white; }
   .form_container .form-group.error label {
     color: #e54940;
     font-weight: bold; }
@@ -266,12 +280,17 @@ body {
     font-size: 20px;
     font-size: 1.25rem; }
   .form_container .select-arrow {
-    background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat 95% 50%;
+    background: url(../images/svg/drop-down.svg) no-repeat;
+    background-size: 15px 15px;
+    background-position: calc(100% - 10px) 50%;
+    background-repeat: no-repeat;
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
     padding-left: 0.5em;
     background-color: white; }
+    .form_container .select-arrow::-ms-expand {
+      display: none; }
   .form_container input[type=number]::-webkit-inner-spin-button,
   .form_container input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;

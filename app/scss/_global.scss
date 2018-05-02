@@ -44,6 +44,10 @@ body {
   margin-bottom: 4rem !important; 
 }
 
+.disclaimer {
+  @include fontSize(12px);
+}
+
 @include media-breakpoint-down(sm) {
   .border-right {
   	border-right: 0 !important;

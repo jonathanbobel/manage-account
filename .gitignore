@@ -1,5 +1,2 @@
-node_modules/*
-!/node_modules/bootstrap/
-/node_modules/bootstrap/*
-!/node_modules/bootstrap/scss
+node_modules
 app/extra_code.html
