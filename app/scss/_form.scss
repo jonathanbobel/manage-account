@@ -140,6 +140,17 @@
 			color: white !important;
 			line-height: 3rem;
 			height: auto !important; 
+
+			&-sm {
+				line-height: 2rem; 
+			}
+
+			&.secondary {
+				color: $link-blue !important;
+				&:hover {
+					color: white !important; 
+				}
+			}
 		} 
 	}
 

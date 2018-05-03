@@ -156,6 +156,12 @@ body {
       color: white !important;
       line-height: 3rem;
       height: auto !important; }
+      .form_container a.btn-sm {
+        line-height: 2rem; }
+      .form_container a.btn.secondary {
+        color: #0F697F !important; }
+        .form_container a.btn.secondary:hover {
+          color: white !important; }
   .form_container p.background {
     position: relative;
     z-index: 1; }
