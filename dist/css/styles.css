@@ -1785,4 +1785,17 @@ body {
 .iti-flag.np {
   background-color: transparent; }
 
+.FAQ h3 {
+  font-size: 16px;
+  font-size: 1rem;
+  padding-bottom: 0.5em; }
+  .FAQ h3 a {
+    font-weight: 400 !important; }
+    .FAQ h3 a.collapsed {
+      font-weight: 700 !important; }
+      .FAQ h3 a.collapsed:before {
+        content: "+ "; }
+    .FAQ h3 a:before {
+      content: "- "; }
+
 /*# sourceMappingURL=styles.css.map */

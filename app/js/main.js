@@ -65,6 +65,18 @@ $(function() {
 
 	}
 
+	//Scroll and open FAQ element
+	if(window.location.hash) {
+		var activeHash =  $(location.hash + '.collapsed');
+		var posTop = $(activeHash).offset().top;
+		$('html,body').animate({
+		  scrollTop: posTop - 20 //where 20 is allowance from top of the page
+		});
+		$(activeHash).removeClass('collapsed').trigger("click");
+	}
+	
+
+
 	 // Phone validation 
 	//  var telInput = $("#intlPhone"),
 	//   errorMsg = $("#error-msg"),
