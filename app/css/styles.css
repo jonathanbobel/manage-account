@@ -220,9 +220,6 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 1; }
-    @media (max-width: 767.98px) {
-      .form_container .main-error, .form_container .main-success {
-        margin-top: 1.5em; } }
     .form_container .main-error img, .form_container .main-success img {
       height: 80%;
       width: 10%;
