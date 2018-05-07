@@ -236,7 +236,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
       text-align: left;
-      width: 70%;
+      max-width: 70%;
       margin: 0;
       font-size: 24px;
       font-size: 1.5rem; }
@@ -1785,7 +1785,9 @@ body {
 .FAQ h3 {
   font-size: 16px;
   font-size: 1rem;
-  padding-bottom: 0.5em; }
+  padding-bottom: 0.5em;
+  text-indent: -13px;
+  padding-left: 13px; }
   .FAQ h3 a {
     font-weight: 400 !important; }
     .FAQ h3 a.collapsed {
@@ -1794,5 +1796,7 @@ body {
         content: "+ "; }
     .FAQ h3 a:before {
       content: "- "; }
+  .FAQ h3 + div p {
+    padding-left: 9px; }
 
 /*# sourceMappingURL=styles.css.map */
