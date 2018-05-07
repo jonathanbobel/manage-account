@@ -128,13 +128,14 @@ body {
   .form_container button, .form_container a.btn {
     color: white;
     background: #3176a3;
-    font-weight: 700; }
+    font-weight: 700;
+    white-space: normal; }
     .form_container button.btn-lg, .form_container a.btn.btn-lg {
-      height: 3.5em;
+      min-height: 3.5em;
       font-size: 18px;
       font-size: 1.125rem; }
     .form_container button.btn-sm, .form_container a.btn.btn-sm {
-      height: 3.5em; }
+      min-height: 3.5em; }
     .form_container button:hover, .form_container a.btn:hover {
       background: #388ebc; }
     .form_container button.secondary, .form_container a.btn.secondary {
@@ -147,7 +148,7 @@ body {
         color: white; }
     @media (max-width: 767.98px) {
       .form_container button, .form_container a.btn {
-        height: 3em; } }
+        min-height: 3em; } }
   .form_container a {
     font-weight: 700;
     color: #0F697F !important;
