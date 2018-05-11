@@ -278,6 +278,12 @@ body {
   .form_container .form-group.valid p {
     display: block !important;
     color: #009789; }
+  .form_container .form-group .static-valid:before {
+    background-image: url(../images/svg/checked-input.svg);
+    content: "";
+    background-size: 20px;
+    padding-left: 25px;
+    background-repeat: no-repeat; }
   .form_container .control-group--inner label {
     font-weight: 400;
     margin-left: 1.5rem; }
@@ -338,6 +344,35 @@ body {
 
 .mb-10 {
   margin-bottom: 10rem !important; }
+
+.warning-sign {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 6400px;
+  height: 3424px;
+  z-index: 248; }
+
+.circle {
+  background-color: white;
+  position: absolute;
+  left: 1691px;
+  top: 897px;
+  width: 9px;
+  height: 41px;
+  z-index: 247; }
+
+.ellipse {
+  border-width: 5px;
+  border-color: white;
+  border-style: solid;
+  border-radius: 50%;
+  position: absolute;
+  left: 1659px;
+  top: 882px;
+  width: 62px;
+  height: 62px;
+  z-index: 246; }
 
 .control {
   display: block;
