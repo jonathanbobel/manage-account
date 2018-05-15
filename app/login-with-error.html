@@ -6,7 +6,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Login w/Error</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> 
+   
   <!--[if IE]>
     <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/g/html5shiv@3.7.3"></script>
@@ -37,13 +37,14 @@
           <h1>Hello!</h1>
       </header>
       <div class="row main-error py-3">
-          <img src="images/warning.png"/>
+          <svg class="icon-svg">
+            <use xmlns:xlink="http://www.w3.org/2000/svg" xlink:href="../images/svg/icons.svg#error"></use>
+          </svg>
         <p>We’re sorry you are having difficulty logging in, but the information you entered does not match our records.</p>
       </div>
       <div class="container">
         <div class="row">
           <div class="col col-md-6 col-12 px-5 my-5 border-right section-left">          
-            <img class="d-md-none mobile-logo w-100 mb-5" alt="Sherwin Williams Logo" src="images/sw_logo_blue.png"/>
             <div><h2>Existing employee</h2></div>
             <form>
               <div class="form-group">
