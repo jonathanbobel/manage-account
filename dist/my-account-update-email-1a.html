@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Reset Password - Step 3</title>
+  <title>Update Email Address</title>
    
   <!--[if IE]>
     <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
@@ -33,36 +33,46 @@
     </nav>
 
     <section class="form_container mx-auto mb-5">
-       <header class="d-flex flex-row align-items-center justify-content-center">
+      <header class="d-flex flex-row align-items-center justify-content-center">
         <a href="index.html" class="home-arrow d-md-none pl-3"><img src="images/svg/left-arrow.svg"/></a>
-        <h1 class="m-0">Reset Password</h1>
+        <h1 class="m-0">Update Email Address</h1>
       </header>
       <div class="container">
         <div class="row">
-          <div class="col col-md-7 mx-auto px-5 my-5">          
-            <div><h2 class="text-center">Step 3 of 3</h2></div>
+          <div class="col col-md-8 mx-auto px-5 my-5">          
             <form>
-              <div><h2 class="mt-5">Create password</h2></div>
-              <p>Please create a new password. All passwords must adhere to the following rules:</p>
-               <ul class="mt-4 rules">
-                <li>at least one upper case letter</li>
-                <li>at least one lower case letter</li>
-                <li>at least one number</li>
-                <li>contain 8 to 32 characters</li>
-              </ul> 
-              <p class="validation-error text-center d-none">
-                Must be at least 8 characters in length
-              </p>
-              <div class="form-group mt-4">
-                <label class="m-0" for="createPassword">Create Password</label>
-                <input type="text" class="form-control form-control-lg" id="createPassword" />
+              <div class="form-group">
+                <label class="m-0" for="reEnterPassword">Old Email Address</label>
+                <div class="row">
+                    <div class="col-md-9">
+                   <p class="pt-2">xxxxxxxx.xxxxxxx@sherwin.com</p>
+                </div> 
+                <div class="col-md-3 text-center pt-2"><a href="#">Delete</a></div>
+                </div>
               </div>
               <div class="form-group">
-                <label class="m-0" for="reEnterPassword">Re-enter Password</label>
-                <input type="password" class="form-control form-control-lg" id="reEnterPassword" />
+                <label class="m-0" for="reEnterPassword">Email Address</label>
+                <input id="updateEmail" type="text" class="form-control form-control-lg"/>
+             <!--    <div id="valid-msg" class="d-none">This is a valid number</div>
+                <div id="error-msg" class="d-none">This number is invalid, please try again</div> -->
               </div>
-              <div class="text-center">
-                <button type="submit" class="btn btn-lg w-100 col-6 btn-m-med">Submit</button>
+               <div class="checkbox">
+                <div class="row">
+                    <div class="col-12 px-0 ml-3 mb-3">
+                     <label class="control control--checkbox">Opt In ornare justo eleifend, varius nunc eget, egestas tellus. 
+                        <input type="checkbox"/>
+                        <div class="control__indicator"></div>
+                      </label>
+                    </div>
+                </div>
+              </div>
+              <div class="row btn-m-med">
+                <div class="col">
+                  <button type="submit" class="btn btn-lg w-100 mb-2">Submit</button>
+                </div>
+                <div class="col">
+                  <button type="submit" class="btn secondary btn-lg w-100">Cancel</button>
+                </div>
               </div>
             </form>
           </div>
@@ -91,6 +101,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
   
     <script src="js/main.min.js"></script>
+
 </body>
 
 </html>

@@ -167,7 +167,8 @@ body {
   .form_container a {
     font-weight: 700;
     color: #0F697F !important;
-    cursor: pointer; }
+    cursor: pointer;
+    display: inline-block; }
     .form_container a.btn {
       color: white !important;
       line-height: 3rem;
