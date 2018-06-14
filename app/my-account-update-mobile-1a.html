@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Update Email Address</title>
+  <title>My Account - Update Password</title>
    
   <!--[if IE]>
     <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
@@ -35,20 +35,28 @@
     <section class="form_container mx-auto mb-5">
       <header class="d-flex flex-row align-items-center justify-content-center">
         <a href="index.html" class="home-arrow d-md-none pl-3"><img src="images/svg/left-arrow.svg"/></a>
-        <h1 class="m-0">Update Email Address</h1>
+        <h1 class="m-0">Update Mobile Phone Number</h1>
       </header>
       <div class="container">
         <div class="row">
           <div class="col col-md-8 mx-auto px-5 my-5">          
-            <p class="mb-5">The information you provide here will only be used for the purposes of user authentication and identity verification in some circumstances when accessing company systems, such as when accessing certain systems from outside the company network, or to verify your identity for company password resets. Your information will be secured in accordance with the company's Employee Privacy Policy available on mySherwin or from Human Resources.</p>
             <form>
               <div class="form-group">
-                <label class="m-0" for="reEnterPassword">Email Address</label>
-                <input id="updateEmail" type="text" class="form-control form-control-lg"/>
+                <label class="m-0" for="reEnterPassword">Old Mobile Number</label>
+                <div class="row">
+                    <div class="col-md-9">
+                   <p class="pt-2">1-xxx-xxx-xxxx</p>
+                </div> 
+                <div class="col-md-3 text-center pt-2"><a href="#">Delete</a></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="m-0" for="reEnterPassword">Mobile Number</label>
+                <input id="intlPhone" type="phone" class="form-control form-control-lg"/>
              <!--    <div id="valid-msg" class="d-none">This is a valid number</div>
                 <div id="error-msg" class="d-none">This number is invalid, please try again</div> -->
               </div>
-               <div class="checkbox">
+             <div class="checkbox">
                 <div class="row">
                     <div class="col-12 px-0 ml-3 mb-3">
                      <label class="control control--checkbox">Opt In ornare justo eleifend, varius nunc eget, egestas tellus. 
@@ -60,7 +68,7 @@
               </div>
               <div class="row btn-m-med">
                 <div class="col">
-                  <button type="submit" class="btn btn-lg w-100 mb-2">Send Code</button>
+                  <button type="submit" class="btn btn-lg w-100 mb-2">Submit</button>
                 </div>
                 <div class="col">
                   <button type="submit" class="btn secondary btn-lg w-100">Cancel</button>
@@ -93,8 +101,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
   
     <!--build:js js/main.min.js -->
+    <script src="js/lib/intlTelInput.min.js"></script>
+    <script src="js/lib/utils.js"></script>
     <script src="js/main.js"></script>
     <!-- endbuild -->
+
+    <script>
+      $("#intlPhone").intlTelInput({
+        separateDialCode: true,
+        autoPlaceholder: "off",
+        formatOnDisplay: true
+      });
+    </script>
 
 </body>
 
