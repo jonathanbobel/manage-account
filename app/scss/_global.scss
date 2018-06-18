@@ -42,6 +42,11 @@ body {
 .btn-m-med {
   margin-top: 3rem !important; 
   margin-bottom: 4rem !important; 
+
+  &.m-disc {
+    margin: 1rem 0 !important; 
+  }
+
 }
 
 .disclaimer {
