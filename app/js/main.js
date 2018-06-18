@@ -74,8 +74,13 @@ $(function() {
 		});
 		$(activeHash).removeClass('collapsed').trigger("click");
 	}
-	
 
+	// Hide disclaimer for GDPR 
+	$('#i-understand').click(function(e){
+		var gdprHeight = $('.gdpr').height();
+		console.log(gdprHeight);
+		$('.gdpr').css("bottom", "-" + gdprHeight + 'px');
+	});
 
 	 // Phone validation 
 	//  var telInput = $("#intlPhone"),

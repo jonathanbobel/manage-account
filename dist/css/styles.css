@@ -3,7 +3,12 @@
 
 @font-face {
   font-family: 'Open Sans';
-  src: url("/fonts/OpenSans-Regular.ttf") format("truetype"), url("/fonts/OpenSans-Bold.ttf") format("truetype"); }
+  src: url("/fonts/OpenSans-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/fonts/OpenSans-Bold.ttf") format("truetype");
+  font-weight: 700; }
 
 body {
   background-color: #1f4d75;
@@ -67,6 +72,32 @@ body {
   vertical-align: middle;
   width: 100px;
   margin-right: 1em; }
+
+.gdpr {
+  width: 100%;
+  background: #78cff6;
+  position: fixed;
+  bottom: 0;
+  transition: 0.3s; }
+  .gdpr p {
+    font-size: 14px;
+    font-size: 0.875rem; }
+  .gdpr .form_container {
+    min-height: auto;
+    background: #78cff6; }
+  .gdpr button#i-understand {
+    min-height: 2.5rem;
+    min-width: 12rem;
+    background: white;
+    display: inline-block;
+    font-weight: 700; }
+    .gdpr button#i-understand:hover {
+      color: #3176a3; }
+    @media (max-width: 991.98px) {
+      .gdpr button#i-understand {
+        display: block;
+        width: 100%;
+        margin: 2rem 0 0 !important; } }
 
 .form_container {
   max-width: 870px;

@@ -86,3 +86,35 @@ body {
   width: 100px;
   margin-right: 1em;
 }
+.gdpr {
+  width: 100%; 
+  background: $gdpr; 
+  position: fixed;
+  bottom: 0; 
+  transition: 0.3s; 
+
+  p {
+      @include fontSize(14px);
+  }
+
+  .form_container {
+    min-height: auto; 
+    background: $gdpr; 
+  }
+
+  button#i-understand {
+    min-height: 2.5rem; 
+    min-width: 12rem; 
+    background: white; 
+    display: inline-block; 
+    font-weight: 700; 
+    &:hover {
+      color: $btn-blue; 
+    }
+    @include media-breakpoint-down(md) {
+      display: block; 
+      width: 100%; 
+      margin: 2rem 0 0 !important; 
+    }
+  }
+}

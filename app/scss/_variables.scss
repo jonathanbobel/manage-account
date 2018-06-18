@@ -15,11 +15,17 @@ $success-green: #00bfad;
 $success-bg: #d9f9f6; 
 $bg-grey: #ebedee;  
 $check-green: #009789;
+$gdpr: #78cff6; 
 
 @font-face {
   font-family: 'Open Sans';
-  src:  url('/fonts/OpenSans-Regular.ttf') format('truetype'),
-  		url('/fonts/OpenSans-Bold.ttf') format('truetype');
+  src:  url('/fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/fonts/OpenSans-Bold.ttf') format('truetype');
+  font-weight: 700; 
 }
 
 
