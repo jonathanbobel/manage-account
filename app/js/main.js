@@ -76,7 +76,7 @@ $(function() {
 	}
 
 	// Hide disclaimer for GDPR 
-	$('#i-understand').click(function(e){
+	$('#i-understand, .gdpr').click(function(e){
 		var gdprHeight = $('.gdpr').height();
 		console.log(gdprHeight);
 		$('.gdpr').css("bottom", "-" + gdprHeight + 'px');
