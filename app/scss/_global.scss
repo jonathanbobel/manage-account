@@ -92,11 +92,20 @@ body {
   position: fixed;
   bottom: 0; 
   transition: 0.3s; 
+  z-index: 1000; 
 
   p {
       @include fontSize(14px);
       color: $font-dark-dark-grey; 
       font-weight: 700; 
+  }
+
+  a.close {
+    color: black !important;
+    @include fontSize(16px);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
   }
 
   .form_container {
