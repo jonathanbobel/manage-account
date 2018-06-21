@@ -166,14 +166,14 @@ body {
       text-indent: -15px;
       margin-left: 15px; }
       .form_container ul:not(.country-list) li:before {
-        color: #009789;
+        color: #007367;
         content: "\2022";
         font-size: 1em;
         padding-right: 0.5em;
         position: relative;
         top: -2px; }
   .form_container ul.rules li {
-    color: #009789;
+    color: #007367;
     font-weight: 700;
     list-style: disc;
     text-indent: 0;
@@ -326,16 +326,16 @@ body {
     display: block !important;
     color: #e54940; }
   .form_container .form-group.valid label {
-    color: #009789;
+    color: #007367;
     font-weight: bold; }
   .form_container .form-group.valid input {
-    border: 2px solid #009789;
-    color: #009789;
+    border: 2px solid #007367;
+    color: #007367;
     background: #d9f9f6 url(../images/svg/checked-input.svg) no-repeat 98% 50%;
     background-size: 25px; }
   .form_container .form-group.valid p {
     display: block !important;
-    color: #009789; }
+    color: #007367; }
   .form_container .form-group .static-valid:before {
     background-image: url(../images/svg/checked-input.svg);
     content: "";
@@ -435,14 +435,14 @@ body {
   border-radius: 50%; }
 
 .control input:checked ~ .control__indicator {
-  background: #009789;
+  background: #007367;
   border: 0; }
 
 .control:hover input:not([disabled]):checked ~ .control__indicator {
-  background: #009789; }
+  background: #007367; }
 
 .control input:checked:focus ~ .control__indicator {
-  background: #009789; }
+  background: #007367; }
 
 .control input:disabled ~ .control__indicator {
   background: white;
