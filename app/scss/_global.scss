@@ -98,6 +98,7 @@ body {
       @include fontSize(14px);
       color: $font-dark-dark-grey; 
       font-weight: 700; 
+      width: 95%; 
   }
 
   a.close {
