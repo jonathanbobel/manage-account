@@ -97,6 +97,10 @@
 		}
 	}
 
+	ol li {
+		padding: 0.5em 0;
+	}
+
 	button, a.btn {
 		color: white;
 		background: $btn-blue;
@@ -136,7 +140,10 @@
 		font-weight: 700; 
 		color: $link-blue !important;
 		cursor: pointer; 
-		display: inline-block;
+
+		&:hover {
+			text-decoration: underline; 
+		}
 
 		&.btn {
 			color: white !important;
@@ -153,7 +160,44 @@
 					color: white !important; 
 				}
 			}
+		}
+
+		&#copyClip {
+			display: inline-block; 
 		} 
+	}
+
+	.can-edit {
+	
+		&:hover {
+			background-color: $edit-blue; 
+			transition: 0.4s;
+		}
+		.col:nth-child(3) {
+			border-left: 2px solid $border-grey;
+			padding-left: 2px; 
+		}
+		svg {
+			width: 20px; 
+			height: 30px; 
+			margin-right: 0.5em; 
+			&:nth-child(2){
+				width: 40px; 
+			}
+		}
+		span {
+		}
+		a {
+			font-weight: normal; 
+			&:hover {
+				text-decoration: none; 
+				span {
+					border-bottom: 2px solid $link-blue; 
+					padding-bottom: 2px; 
+				}
+			}
+		}
+
 	}
 
 	p.background {

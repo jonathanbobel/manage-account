@@ -49,6 +49,11 @@ body {
 
 }
 
+.cta {
+  color: $error-red !important; 
+  font-weight: 700; 
+}
+
 .disclaimer {
   @include fontSize(12px);
 }
@@ -116,7 +121,7 @@ body {
 
   button#i-understand {
     min-height: 2.5rem; 
-    min-width: 12rem; 
+    min-width: 9.5rem; 
     background: white; 
     display: inline-block; 
     font-weight: 700; 

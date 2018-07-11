@@ -13,11 +13,6 @@ const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
 const concat = require('gulp-concat');
 
-// Basic Gulp task syntax
-gulp.task('hello', function() {
-  console.log('Hello Zell!');
-})
-
 // Development Tasks 
 // -----------------
 

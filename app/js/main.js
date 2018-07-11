@@ -82,6 +82,38 @@ $(function() {
 		$('.gdpr').css("bottom", "-" + gdprHeight + 'px');
 	});
 
+	// Redirects Authenticator App Link for Android or iPhone
+	$('.control input').click(function() {
+		if($('#iPhone').is(':checked')) { 
+			$('#appContinue').attr("onclick","window.location.href='iphone-rules.html'");
+		}
+		else if($('#Android').is(':checked')) { 
+			$('#appContinue').attr("onclick","window.location.href='android-rules.html'");
+		}
+	});
+
+	$('#copyClip').click(function(copyClip) {
+	  // Create a "hidden" input
+	  var aux = document.createElement("input");
+	  // Assign it the value of the specified element
+	  var value = document.getElementById("copyClip").innerHTML;
+	  aux.setAttribute("value", value);
+	  // Append it to the body
+	  document.body.appendChild(aux);
+	  // Highlight its content
+	  aux.select();
+	  // Copy the highlighted text
+	  document.execCommand("copy");
+	  // Remove it from the body
+	  document.body.removeChild(aux);
+	  // Alert user of success
+	  $('#copyClip').tooltip('show');
+	  setTimeout(function(){ 
+	  	$('#copyClip').tooltip('hide'); 
+	  	$('#copyClip').tooltip('disable');
+	  }, 2500);
+	});
+
 	 // Phone validation 
 	//  var telInput = $("#intlPhone"),
 	//   errorMsg = $("#error-msg"),

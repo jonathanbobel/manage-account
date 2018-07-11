@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title></title>
+  <title>Landing Page Front End Code - MFA Project</title>
   <!--[if IE]>
     <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/g/html5shiv@3.7.3"></script>
@@ -17,9 +17,7 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"> 
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/print.css">
 
 </head>
 
@@ -34,28 +32,49 @@
     </nav>
 
     <section class="form_container mx-auto mb-5">
-      <header>
-        <h1 class="mx-auto d-none d-md-block">Page Links</h1>
+      <header class="flex-row align-items-center justify-content-center d-flex">
+        <h1>Page Links</h1>
       </header>
       <div class="container">
         <div class="row">
-          <div class="col col-md-6 col-12 px-5 my-5 border-bottom border-right section-left">    
+          <div class="col col-md-6 col-12 px-5 my-5 border-right section-left">    
             <div><h2>MFA Login</h2></div>
-            <button type="submit" onclick="window.location.href='login.html'" class="btn btn-lg w-100 my-3">Login Page</button>
-            <button type="submit" onclick="window.location.href='login-with-error.html'" class="btn btn-lg w-100 my-3">Login Page w/Error</button>
+            <button type="submit" onclick="window.location.href='manage-account.html'" class="btn btn-lg w-100 my-3">Manage Account</button>
+            <hr/>
+            <div><h2 class="mt-4">Mobile Authenticator App</h2></div>
+            <button type="submit" onclick="window.location.href='mobile-auth-app.html'" class="btn btn-lg w-100 my-3">Mobile Authenticator Step 1</button>
+            <button type="submit" onclick="window.location.href='mobile-auth-app-2.html'" class="btn btn-lg w-100 my-3">Mobile Authenticator Step 2</button>
+            <button type="submit" onclick="window.location.href='mobile-auth-app-3a.html'" class="btn btn-lg w-100 my-3">Mobile Authenticator Step 3a</button>
+            <button type="submit" onclick="window.location.href='mobile-auth-app-3b.html'" class="btn btn-lg w-100 my-3">Mobile Authenticator Step 3b</button>
+            <button type="submit" onclick="window.location.href='mobile-auth-app-3c.html'" class="btn btn-lg w-100 my-3">Mobile Authenticator Step 3c</button>
+            <button type="submit" onclick="window.location.href='mobile-auth-app-google.html'" class="btn btn-lg w-100 my-3">Mobile Authenticator App<br>Google Flow</button>
           </div>
           <div class="col col-md-6 col-12 px-5 my-5 section-right">
-            <div><h2>Reset Password</h2></div>
-            <button type="submit" onclick="window.location.href='reset-password-1.html'" class="btn btn-lg w-100 my-3">Reset Password Step 1</button>
-            <button type="submit" onclick="window.location.href='reset-password-2.html'" class="btn btn-lg w-100 my-3">Reset Password
-            Step 2</button>
-            <button type="submit" onclick="window.location.href='reset-password-3.html'" class="btn btn-lg w-100 my-3">Reset Password Step 3</button>
+          
+            <div><h2 class="mt-4">My Account</h2></div>
+            <button type="submit" onclick="window.location.href='my-account.html'" class="btn btn-lg w-100 my-3">My Account</button>
+            <button type="submit" onclick="window.location.href='my-account-full-page.html'" class="btn btn-lg w-100 my-3">My Account Full Page</button>
+            <button type="submit" onclick="window.location.href='my-account-update-password.html'" class="btn btn-lg w-100 my-3">Update Password</button>
+            <button type="submit" onclick="window.location.href='my-account-security-questions.html'" class="btn btn-lg w-100 my-3">Security Questions</button>
+            <button type="submit" onclick="window.location.href='my-account-identity-verification-1.html'" class="btn btn-lg w-100 my-3">Identity Verification No Info</button>
+            <button type="submit" onclick="window.location.href='my-account-identity-verification-2.html'" class="btn btn-lg w-100 my-3">Identity Verification Need Add Info</button>
+            <button type="submit" onclick="window.location.href='my-account-identity-verification-3.html'" class="btn btn-lg w-100 my-3">Identity Verification Has Phone</button>
+            <button type="submit" onclick="window.location.href='my-account-identity-verification-4.html'" class="btn btn-lg w-100 my-3">Identity Verification Update Authenticator</button>
+            <button type="submit" onclick="window.location.href='my-account-update-mobile-1.html'" class="btn btn-lg w-100 my-3">Update Mobile Step 1</button>
+            <button type="submit" onclick="window.location.href='my-account-update-mobile-1a.html'" class="btn btn-lg w-100 my-3">Update Mobile Delete Number</button>
+            <button type="submit" onclick="window.location.href='my-account-update-mobile-2.html'" class="btn btn-lg w-100 my-3">Update Mobile Step 2</button>
+            <button type="submit" onclick="window.location.href='my-account-update-email-1.html'" class="btn btn-lg w-100 my-3">Update Email 1</button>
+            <button type="submit" onclick="window.location.href='my-account-update-email-1a.html'" class="btn btn-lg w-100 my-3">Update Email Delete</button>
+            <button type="submit" onclick="window.location.href='my-account-update-email-2.html'" class="btn btn-lg w-100 my-3">Update Email 2</button>
           </div>
         </div>
       </div>
     </section>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
   

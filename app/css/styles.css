@@ -41,6 +41,10 @@ body {
   .btn-m-med.m-disc {
     margin: 1rem 0 !important; }
 
+.cta {
+  color: #e54940 !important;
+  font-weight: 700; }
+
 .disclaimer {
   font-size: 12px;
   font-size: 0.75rem; }
@@ -95,7 +99,7 @@ body {
     background: #78cff6; }
   .gdpr button#i-understand {
     min-height: 2.5rem;
-    min-width: 12rem;
+    min-width: 9.5rem;
     background: white;
     display: inline-block;
     font-weight: 700; }
@@ -183,6 +187,8 @@ body {
     .form_container ul.rules li:before {
       content: "";
       padding: 0; }
+  .form_container ol li {
+    padding: 0.5em 0; }
   .form_container button, .form_container a.btn {
     color: white;
     background: #3176a3;
@@ -210,8 +216,9 @@ body {
   .form_container a {
     font-weight: 700;
     color: #0F697F !important;
-    cursor: pointer;
-    display: inline-block; }
+    cursor: pointer; }
+    .form_container a:hover {
+      text-decoration: underline; }
     .form_container a.btn {
       color: white !important;
       line-height: 3rem;
@@ -222,6 +229,27 @@ body {
         color: #0F697F !important; }
         .form_container a.btn.secondary:hover {
           color: white !important; }
+    .form_container a#copyClip {
+      display: inline-block; }
+  .form_container .can-edit:hover {
+    background-color: rgba(58, 154, 202, 0.1);
+    transition: 0.4s; }
+  .form_container .can-edit .col:nth-child(3) {
+    border-left: 2px solid #d4d2d2;
+    padding-left: 2px; }
+  .form_container .can-edit svg {
+    width: 20px;
+    height: 30px;
+    margin-right: 0.5em; }
+    .form_container .can-edit svg:nth-child(2) {
+      width: 40px; }
+  .form_container .can-edit a {
+    font-weight: normal; }
+    .form_container .can-edit a:hover {
+      text-decoration: none; }
+      .form_container .can-edit a:hover span {
+        border-bottom: 2px solid #0F697F;
+        padding-bottom: 2px; }
   .form_container p.background {
     position: relative;
     z-index: 1; }

@@ -35,22 +35,13 @@
     <section class="form_container mx-auto mb-5">
       <header class="d-flex flex-row align-items-center justify-content-center">
         <a href="index.html" class="home-arrow d-md-none pl-3"><img src="images/svg/left-arrow.svg"/></a>
-        <h1 class="m-0">Update Mobile Phone Number</h1>
+        <h1 class="m-0">Add Mobile Phone Number</h1>
       </header>
       <div class="container">
         <div class="row">
           <div class="col col-md-8 mx-auto px-5 my-5">          
-            <form>
-              <div class="form-group">
-                <label class="m-0" for="reEnterPassword">Old Mobile Number</label>
-                <div class="row">
-                    <div class="col-md-9">
-                   <p class="pt-2">1-xxx-xxx-xxxx</p>
-                </div> 
-                <div class="col-md-3 text-center pt-2"><a href="#">Delete</a></div>
-                </div>
-              </div>
-              <div class="form-group">
+            <form onsubmit="return false">
+              <div class="form-group mt-3">
                 <label class="m-0" for="reEnterPassword">Mobile Number</label>
                 <input id="intlPhone" type="phone" class="form-control form-control-lg"/>
              <!--    <div id="valid-msg" class="d-none">This is a valid number</div>
@@ -68,10 +59,10 @@
               </div>
              <div class="row btn-m-med m-disc">
                 <div class="col">
-                  <button type="submit" class="btn btn-lg w-100 mb-2">Submit</button>
+                  <button onclick="window.location.href='/my-account-identity-verification-has-phone.html'" type="submit" class="btn btn-lg w-100 mb-2">Submit</button>
                 </div>
                 <div class="col">
-                  <button type="submit" class="btn secondary btn-lg w-100">Cancel</button>
+                  <button onclick="window.location.href='/my-account-google-auth.html'" type="submit" class="btn secondary btn-lg w-100">Cancel</button>
                 </div>
               </div>
             </form>
